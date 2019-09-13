@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap')
+
+body
+    font-family: 'Open Sans'
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    h1
+        margin-bottom: 100px
+    .row
+        // border: 1px solid black
+        display: flex
+        flex-direction: row
+        width: fit-content
+        height: 100px
+        // align-self: center
+        .cell
+            width: 100px
+            border-color: black
+            border-style: solid
+            border-width: 0
+        .tl
+            border-width: 0 1px 1px 0
+        .tc
+            border-width: 0 0 1px 0
+        .tr
+            border-width: 0 0 1px 1px
+        .ctr
+            border-width: 0 1px 0 1px
+        .bl
+            border-width: 1px 1px 0 0
+        .bc
+            border-width: 1px 0 0 0 
+        .br
+            border-width: 1px 0 0 1px

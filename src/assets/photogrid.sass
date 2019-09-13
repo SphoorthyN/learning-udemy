@@ -1,0 +1,28 @@
+@import variables.sass
+body
+  font-family: 'Open Sans', serif 
+  padding: 0 20px
+  p
+    font-size: 3.5em
+    margin-top: 40px
+    @media screen and ( max-width: 900px )
+      text-align: center
+
+  .container
+    display: grid
+    // +border
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    @media screen and ( max-width: 900px )
+      grid-template-columns: 1fr
+      
+    grid-gap: 40px
+    justify-items: center
+    .photo
+      // +border
+      background-color: #111111
+      img
+        @include square(100%)
+        box-shadow: 0 0 15px black
+      
+
+

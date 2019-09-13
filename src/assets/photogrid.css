@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+body {
+  font-family: 'Open Sans', serif;
+  padding: 0 20px;
+}
+
+body p {
+  font-size: 3.5em;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  body p {
+    text-align: center;
+  }
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  justify-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  body .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+body .container .photo {
+  background-color: #111111;
+}
+
+body .container .photo img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+/*# sourceMappingURL=photogrid.css.map */
