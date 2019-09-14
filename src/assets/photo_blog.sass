@@ -1,0 +1,55 @@
+@import _variables.sass
+
+body
+    font-family: 'Open Sans'
+    button
+        border: 1px solid #f04141e1
+        background-color: #aaaaaa00
+        padding: 7px 10px
+        text-transform: uppercase
+        font-size: 0.7em
+        border-radius: 5px
+    .container
+        display: grid
+        grid-template-columns: 2fr 9fr 2fr
+        grid-column: 2/3
+        nav
+            grid-row: 1/2
+            grid-column: 2/3
+            padding: 10px 0                
+            // +border
+        header
+            // +border
+            padding: 80px 0
+            text-align: center
+            grid-column: 1/4
+            background-color: #33dde950
+            button
+                margin: 10px 5px
+                color: white
+                background-color: green
+        section
+            display: grid
+            // +border
+            grid-column: 2/3
+            grid-template-columns: 1fr 1fr 1fr
+            padding: 40px 0
+            grid-gap: 30px
+            .card
+                box-shadow: 0 0 5px #00000050
+                border: 1px solid #00000050
+                img
+                    width: 100%
+                    padding: 0
+                    margin: 0
+                .card-title
+                    font-weight: 600
+                    padding: 5px 15px
+                .card-body
+                    font-size: .8em
+                    padding: 5px 15px
+                .btn-group
+                    margin: 10px 15px
+                    // padding: 0 aut
+            @media screen and ( max-width: 1000px )
+                grid-template-columns: 1fr
